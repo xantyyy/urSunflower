@@ -1311,22 +1311,35 @@ body {
 <style>
 .texto-abajo {
     position: absolute;
-    bottom: 20px;          /* Distancia desde la parte inferior */
-    left: 50%;             /* Centra horizontalmente */
+    bottom: 20px;        
+    left: 50%;            
     transform: translateX(-50%);
-    color: #fdfd96;        /* Amarillo suave */
+    color: #fdfd96;        
     font-size: 30px;
     font-family: 'Arial', sans-serif;
     text-align: center;
     text-shadow: 2px 2px 4px #000;
-    z-index: 10;           /* Encima de las flores */
-    opacity: 0;            /* Para animación */
+    z-index: 10;          
+    opacity: 0;         
     animation: aparecerTexto 2s forwards;
 }
 
 @keyframes aparecerTexto {
     from { opacity: 0; transform: translateX(-50%) translateY(10px); }
     to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+@media (max-width: 600px) {
+    .texto-abajo {
+        bottom: 400px;
+        font-size: 24px;
+        animation: aparecerTextoMobile 10s forwards;
+    }
+
+    @keyframes aparecerTextoMobile {
+        from { opacity: 0; transform: translateX(-50%) translateY(50px); }
+        to { opacity: 1; transform: translateX(-50%) translateY(0); }
+    }
 }
 </style>
 
