@@ -6,7 +6,7 @@ X=MsgBox("Sorry but the file really can't be opened po :((",0+64,"xntyyy")
 X=MsgBox("Maybe it only opens po if you smile first.",0+64,"xntyyy")
 X=MsgBox("Because you look so cute when you smile!",0+64,"xntyyy")
 X=MsgBox("Corny? HAHAHAHAHAHAHA",0+64,"xntyyy")
-X=MsgBox("Happy Valentine's, Zieee!",0+64,"xntyyy")
+X=MsgBox("Happy Valentine's!",0+64,"xntyyy")
 X = MsgBox("This is for you, because you deserve all the things that make you happy. :)", vbOKOnly + vbInformation, "xntyyy")
 
 
